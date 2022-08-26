@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+</svg>
+</head>
+<body>
+
+<p id="checking">Click on the buttons inside the tabbed menu:</p>
+
+<div class="icon-bar">
+<button class="tablink" onclick="setTimeout(boot_gif_, 7100),openCity('boot_gif', this, '#950'),document.getElementById('btntxt').innerHTML = 'Home page'" id="defaultOpen"><i class="fa fa-home">‌ ‌</i>Home</button>
+<button id="btntxt" class="tablinks"  style="border-radius: 15px;" onclick="document.getElementById('btntxt').style.color = 'red'">Welcome</button>
+<button class="tablink" onclick="openCity('new', this, '#060'),document.getElementById('btntxt').innerHTML = 'Create a new Q&A',createFunction()"><i class="fa fa-phone">‌ ‌</i> WhatsApp</button>
+<a href="https://github.com/prabhasha2006">
+<button class="tablink"  onclick="openCity('github_', this, '#809'),document.getElementById('btntxt').innerHTML = 'Log in to your acc'"><i class="fa fa-user">‌ ‌</i>Github</button>
+</a>
+<button class="tablink" onclick="openCity('Tokyo', this, '#008'),document.getElementById('btntxt').innerHTML = 'Create account'"><i class="fa fa-bars">‌ ‌</i>About</button>
+</div>
+
+<!-- <i _ngcontent-tpe-c2="" class="zmdi zmdi-account material-icons-name"></i>
+  
+<i _ngcontent-pyb-c2="" class="fa fa-spinner fa-spin"></i>
+<i _ngcontent-tpe-c13="" class="fa fa-spinner fa-spin"></i>
+<i _ngcontent-xvh-c11="" class="fas fa-lightbulb"></i>
+
+<img _ngcontent-itw-c9="" alt="Image" class="video-js" src="https://i.ibb.co/CwffZ61/20220605-104552.jpg">
+
+<div _ngcontent-wgr-c9="" class="ball-grid-pulse"><div _ngcontent-wgr-c9=""></div><div _ngcontent-wgr-c9=""></div><div _ngcontent-wgr-c9=""></div><div _ngcontent-wgr-c9=""></div><div _ngcontent-wgr-c9=""></div><div _ngcontent-wgr-c9=""></div><div _ngcontent-wgr-c9=""></div><div _ngcontent-wgr-c9=""></div><div _ngcontent-wgr-c9=""></div></div> -->
+
+<div id="boot_gif"  class="tabcontent" style="background-image:url('./media/game_boot.gif');background-size:1300px;" >
+  <button id="starts" class="tablinkl" onmouseover="btnover('starts','options','quit','SKIP START')" onclick="openCity('boot', this)">‌ ‌ ‌ ‌ ‌ SKIP</button>
+</div>
+<div id="boot_ing"  class="tabcontent" style="background-image:url('./media/new_game_boot.gif');background-size:1300px;" >
+  <button id="starts" class="tablinkl" onmouseover="btnover('starts','','','SKIP ')" onclick="openCity('boot', this)">‌ ‌ ‌ ‌ ‌ SKIP</button>
+
+</div>
+
+<div id="boot" class="tabcontent" style="background-image:url('./media/menu.jpeg')">
+  
+  <h1 id="a4" style="color:rgb(0, 0, 0)">.</h1>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button id="start" class="tablinkl" onmouseover="btnover('start','options','quit','START GAME')" onclick="openCity('start_s', this),document.getElementById('btntxt').innerHTML = 'question',btnclick()">‌ ‌ ‌ ‌ ‌ START GAME</button>
+    <button id="options" class="tablinkl" onmouseover="btnover('options','start','quit','OPTIONS')" onclick="openCity('options_s', this),document.getElementById('btntxt').innerHTML = 'Home page',btnclick()">‌ ‌ ‌ ‌ ‌ OPTIONS</button>
+    <button id="quit" class="tablinkl" onmouseover="btnover('quit','start','options','QUIT GAME')" onclick="openCity('quit_s', this),document.getElementById('btntxt').innerHTML = 'Home page',btnclick()">‌ ‌ ‌ ‌ ‌ QUIT  GAME</button>
+    <p style="color:aqua;position:absolute;bottom: 8px;left: 16px;;">K.Prabhasha</p>
+
+    
+</div>
+
+<div id="start_s" class="tabcontent" style="background-image:url('./media/game.jpeg')">
+  
+  <h1 id="a4" style="color:rgb(0, 0, 0)">.</h1>
+
+    <button class="tablinkl"> </button>
+    <button id="new_game" class="tablinkll" onmouseover="btnover('new_game','load_game','delete_game','NEW GAME')" onclick="setTimeout(boot_ing_, 11000),new_game_boot_mp3(),openCity('boot_ing', this),document.getElementById('btntxt').innerHTML = 'question',btnclick()">‌ ‌ ‌ ‌ ‌ NEW GAME</button>
+    <button id="load_game" class="tablinkll" onmouseover="btnover('load_game','new_game','delete_game','LOAD GAME')" onclick="openCity('load_s', this),document.getElementById('btntxt').innerHTML = 'Home page',btnclick()">‌ ‌ ‌ ‌ ‌ LOAD GAME</button>
+    <button id="delete_game" class="tablinkll" onmouseover="btnover('delete_game','new_game','load_game','DELETE GAME')" onclick="openCity('quit_s', this),document.getElementById('btntxt').innerHTML = 'Home page',btnclick()">‌ ‌ ‌ ‌ ‌ DELETE GAME</button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button id="back_game" class="tablinkb" onmouseover="btnover('null','load_game','delete_game','null')" onclick="openCity('boot', this),document.getElementById('btntxt').innerHTML = 'Home page',btnclick()">‌ ‌ ‌ ‌ ‌ BACK</button>
+    <p style="color:aqua;position:absolute;bottom: 8px;left: 16px;;">K.Prabhasha</p>
+
+    
+</div>
+
+<div id="quit_s" class="tabcontent">
+  
+  <h1 id="a4" style="color:aliceblue">EXIT</h1>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button id="s_game" class="tablinkl" onmouseover="btnover('s_game','start','options','RESTART GAME')" onclick="openCity('boot', this),document.getElementById('btntxt').innerHTML = 'question',btnclick()">‌ ‌ ‌ ‌ ‌ RESTART GAME</button>
+</div>
+
+<div id="options_s" class="tabcontent" style="background-image:url('./media/menu.jpeg')">
+  
+  <h1 id="a4">.</h1>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button id="no_game" class="tablinkl" onmouseover="btnover('no_game','start','options','NO OPTIONS HERE')" onclick="openCity('boot', this),document.getElementById('btntxt').innerHTML = 'question',btnclick()">‌ ‌ ‌ ‌ ‌ NO OPTIONS HERE</button>
+</div>
+
+<div id="load_s" class="tabcontent" style="background-image:url('./media/game.jpeg')">
+  
+  <h1 id="a4" style="color:orangered"> ERROR! :SAVED GAME NOT FOUND !</h1>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button class="tablinkl"> </button>
+    <button id="load_game" class="tablinkl" onmouseover="btnover('load_game','start','options','START NEW GAME')" onclick="openCity('boot', this),document.getElementById('btntxt').innerHTML = 'question',btnclick()">‌ ‌ ‌ ‌ ‌ START NEW GAME</button>
+</div>
+
+<!--K.Prabhasha-->
+
+<div id="new" class="tabcontent">
+
+  <div align="center">
+  	<h1 for="txts">WHATSAPP MESSAGE DIRECT LINK</h1>
+    <p id="foll"></p>  
+    <textarea  id="numb" name="txte" rows="1" cols="15" style="font-size:16px;border: 3px solid rgb(255, 255, 255);border-radius: 15px;" placeholder="  94776115376"></textarea><meta charset="UTF-8">
+    <p id="foll"></p>  
+    <textarea id="msg" name="txte" rows="3" cols="40" style="font-size:18px;border-radius: 10px;" placeholder="
+  Type a message"></textarea><meta charset="UTF-8">
+  <p id="foll"></p>
+  <button class="sendmsg" onclick="wamsg('https:\/\/wa.me/','?text='),document.getElementById('sm_').innerText = 'Send message',document.getElementById('cm_').innerText = 'Copy link'">( Generate message )</button> 
+  </div>
+    <p id="foll"></p>
+
+  <div align="center">
+     <a id="sm" href="https://wa.me/94776115376?text=Hi,%20Kumuthu👋%20%20💘I%20love%20You😘😘">
+      <button id="sm_" class="send_" onclick="">- - - - - - -</button>
+     </a><a id="cm">
+      <button id="cm_" class="send_" onclick="copytxt()">- - - - - - -</button>
+     </a>
+    <p id="foll"></p>
+  <textarea id="link_" rows="1" cols="45" style="font-size:10px;"></textarea>
+  </div>
+
+</div>
+
+
+<div id="github_" class="tabcontent">
+  <h1 id="a2">Openning Github Page</h1>
+  <p>Powered By Kumuthu Prabhasha</p> 
+</div>
+
+
+<div id="Tokyo" class="tabcontent">
+  <h1 id="a3">GTA Sanandrias booting</h1>
+  <p>made by html & javascript.
+-- require windows --
+  </p>
+</div>
+
+
+<audio id="ckickover1">
+  <source src="./media/clickover.mp3" type="audio/mpeg">
+</audio>
+<audio id="onckick1" controls>
+  <source src="./media/onclick.mp3" type="audio/mpeg">
+</audio>
+<audio id="boot_mp3" controls>
+  <source src="./media/sanandrias.mp3" type="audio/mpeg">
+</audio>
+
+
+<script src="kumuthu.js"></script> 
+   
+</body>
+</html> 
