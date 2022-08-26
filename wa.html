@@ -5,20 +5,18 @@
 
  <link rel="stylesheet" href="style.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
-  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
-</svg>
+
 </head>
 <body>
 
     <div class="icon-bar">
-        <button class="tablink" onclick="openCity('new', this, '#060'),document.getElementById('btntxt').innerHTML = 'Create a new Q&A',createFunction()"><i class="fa fa-phone">‌ ‌</i> WhatsApp</button>
+        <button class="tablink" style="width: 50%;" onclick="openCity('new', this, '#060'),document.getElementById('btntxt').innerHTML = 'Create a new Q&A',createFunction()"><i class="fa fa-phone">‌ ‌</i> WhatsApp</button>
         <a href="https://github.com/prabhasha2006">
-        <button class="tablink"  onclick="openCity('github_', this, '#809'),document.getElementById('btntxt').innerHTML = 'Log in to your acc'"><i class="fa fa-user">‌ ‌</i>Github</button>
+        <button class="tablink" style="width: 49%;" onclick="openCity('github_', this, '#809'),document.getElementById('btntxt').innerHTML = 'Log in to your acc'"><i class="fa fa-user">‌ ‌</i>Github</button>
         </a>
         </div>
 
-    <div id="new" class="tabcontent">
+    <div id="new" class="tabcontent" style="height: 410px;">
 
         <div align="center">
             <h1 for="txts">WHATSAPP MESSAGE DIRECT LINK</h1>
@@ -34,15 +32,16 @@
       
         <div align="center">
            <a id="sm" href="https://wa.me/94776115376?text=Hi,%20Kumuthu👋%20%20💘I%20love%20You😘😘">
-            <button id="sm_" class="send_" onclick="">- - - - - - -</button>
+            <button id="sm_" class="send_" onclick="">- - - - - -</button>
            </a><a id="cm">
-            <button id="cm_" class="send_" onclick="copytxt()">- - - - - - -</button>
+            <button id="cm_" class="send_" onclick="copytxt()">- - - - - -</button>
            </a>
           <p id="foll"></p>
         <textarea id="link_" rows="1" cols="35" style="font-size:6px;"></textarea>
         </div>
       
       </div>
+<p align="center">Powered by: [K.Prabhasha]</p>
 
 <script>
 
