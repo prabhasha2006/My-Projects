@@ -111,7 +111,7 @@ color:#d9ff00;
     cursor: pointer;
     padding: 8px 14px;
     font-size: 15px;
-    width: 14%;
+    width: auto;
     transition: .1s ease;
   }
   .send_:hover{
@@ -168,6 +168,7 @@ color:#d9ff00;
 
 
 #new {background-color:rgb(0, 202, 51);height: 450px;}
+#about {background-color:rgb(217, 255, 0);height: 450px;}
 #start_s {background-color:rgb(15, 15, 15);height: 450px;}
 #Tokyo {background-color:blue;height: 450px;}
 #boot {background-color:rgb(15, 15, 15);height: 450px;}
