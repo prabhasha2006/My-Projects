@@ -86,7 +86,7 @@ body {font-family: "Lato", serif;}
   .sendmsg {
     border-radius: 25px;
     background-color: rgba(0, 155, 0, 0);
-    border: 0px solid rgb(44, 23, 38);
+    border: 2px solid rgb(44, 23, 38);
     color: rgb(0, 17, 248);
     font-family:sans-serif;
     outline: none;
