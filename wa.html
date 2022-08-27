@@ -63,13 +63,19 @@
 
 function wamsg(numb, msg){
 
+  var link = document.getElementById('numb').value;
+if (!link){
+  document.getElementById("link_").value = "ERROR! :Invalid values!"
+  document.getElementById('numb').placeholder = "  ?????????????"
+}else{
+
 var link = document.getElementById('msg').value
 link = link.replace(/ /g,"%20")
 link = numb + document.getElementById('numb').value + msg + link;
 document.getElementById('sm').href = link
 document.getElementById('link_').value = link
 
-}
+}}
 function openCity(cityName,elmnt,color) {
 
 var i, tabcontent, tablinks;
