@@ -265,6 +265,28 @@ input:focus {
   animation-name: examples;
   animation-duration: 0.5s;
 }
+.cal_buton_refresh {
+  border-radius: 15px;
+  background: #73AD21;
+  background-color: rgb(146, 66, 122);
+  color: white;
+  float: left;
+  border: 4px solid rgb(44, 23, 38);
+  outline: none;
+  cursor: pointer;
+  padding: 8px 14px;
+  font-size: 14px;
+  width: 17%;
+  transition: .5s ease;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.cal_buton_refresh:hover {
+
+  color:rgb(4, 20, 255);
+  border-radius: 35px;
+  border: 2px solid rgb(255, 2, 2);
+  }
 
 .cal_cli {
 
@@ -291,6 +313,10 @@ color:rgb(4, 20, 255);
 font-size: 25px;
 border-radius: 35px;
 border: 3px solid rgb(255, 2, 2);
+}
 
+@media only screen and (max-width: 768px) {
+  .kumuthu {
 
+    }
 }
