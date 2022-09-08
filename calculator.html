@@ -16,9 +16,9 @@
    
     <div class="icon-bar">
 
-        <button class="tablink" style="width: 44%;" onclick="SELECTIONS('inter', this, '#049')"><i class='fas fa-calculator'>‌ ‌</i> CALCULATOR</button>
+        <button class="tablink" style="width: 44%;" onclick="SELECTIONS('inter', this, '#049'),about(1)"><i class='fas fa-calculator'>‌ ‌</i> CALCULATOR</button>
         <button class="cal_buton_refresh" style="width: 13%;" onclick="click_del_all()" style="color:red;font-size: 15px;text-align: left;"><i class="fa fa-refresh" style="color:red;font-size: 15px;text-align: left;"></i></button>
-        <button class="tablink" style="width: 41%;" onclick="SELECTIONS('history', this, '#801')"><i class="fa fa-angle-double-left" style="font-size: 15px;">‌ ‌</i> HISTORY</button>
+        <button class="tablink" style="width: 41%;" onclick="SELECTIONS('history', this, '#801'),about(0)"><i class="fa fa-angle-double-left" style="font-size: 15px;">‌ ‌</i> HISTORY</button>
         
     </div>
 
@@ -72,6 +72,12 @@
     </audio>
     <audio id="error_audio" controls>
     <source src="./media/onclick.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="simple_cal_audio" controls>
+    <source src="./media/simple_cal.wav" type="audio/mpeg">
+    </audio>
+    <audio id="history_audio" controls>
+    <source src="./media/cal_history.wav" type="audio/mpeg">
     </audio>
 </a>
 
