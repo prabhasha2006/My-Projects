@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>EveloCode</title>
+</head>
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="header-items">
+            <img draggable="false" class="xcodejet-header-img" src="./evelocode.png">
+        </div>
+        <div class="header-back">
+            <b class="time-server">WA_LINK</b>
+            <a >
+                <img onclick="menuTabOpen()" draggable="false" id="profile-1" src="https://cdn-icons-png.flaticon.com/512/124/124034.png?w=740&t=st=1684986007~exp=1684986607~hmac=b4427d26aaeab94a371628e02b2374336f928f64a586c1e4a9bf7505c89eed97">
+            </a>
+        </div>
+    </div>
+    <div class="body">
+        <h1><b>Create a direct link to share<br>WhatsApp messages</b></h1>
+        <div class="input-box">
+            <fieldset>
+                <legend>WhatsApp number</legend>
+                <input oninput="numberTyping(this)" id="number" type="text" placeholder="+947 • • • • • • • •">
+            </fieldset>
+        </div>
+        <div class="text-box">
+            <fieldset>
+                <legend>Type a message</legend>
+                <textarea oninput="textTyping(this)" type="text" placeholder="Hi,  I am ....
+How are you?"></textarea>
+            </fieldset>
+        </div>
+        <div class="output-box">
+            <fieldset onclick="copyUrl()">
+                <legend id="copyLable" onclick="copyUrl()">Copy this url <i class="fa fa-copy"></i></legend>
+                <textarea disabled type="text" id="output" placeholder="Enter above details"></textarea>
+            </fieldset>
+        </div>
+        <div class="footer-copyright">
+            <h2>Powered By: &nbsp;<img src="./evelocode.png"></h2>
+            <br>
+            <h3>U.V.D.Kumuthu Prabhasha</h3>
+        </div>
+    </div>
+    <script src="./evelocode.js"></script>
+</body>
+</html>

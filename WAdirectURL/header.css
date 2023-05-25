@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header div {
+}
+body {
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+}
+.header {
+    width: 100%;
+    height: 75px;
+    background-image: linear-gradient(120deg, rgb(156, 247, 253) 250px, rgb(0, 0, 0) 15.1%);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+.header-items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.xcodejet-header-img {
+    margin-left: 10px;
+    width: 80%;
+    max-width: 180px;
+}
+.xcodejet-header-img:hover {
+    /*content: url('./System/header1.png');*/
+}
+@font-face {
+    font-family: 'xcodejet';
+    src: url(./System/Proximateus.ttf);
+}
+@font-face {
+    font-family: 'xcodejet02';
+    src: url(./System/MagmaWave-Caps.otf);
+}
+.header-text {
+    padding: 5px;
+    line-height: 10px;
+}
+.header-text h2 {
+    font-family: 'xcodejet';
+    font-weight: lighter;
+    color: white
+}
+.header-text h3 {
+    font-family: 'xcodejet02';
+    font-weight: lighter;
+    font-size: 15px;
+    color: rgb(94, 255, 0);
+}
+
+
+
+
+
+.header-back {
+    width: 70px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid rgba(151, 151, 151, 0.027);
+    padding: 3px;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: right;
+}
+.header-back img {
+    margin-left: 3px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50px;
+    border-radius: 25px;
+    animation: fill-dp 3s infinite ease-in-out;
+}
+@keyframes fill-dp {
+    0% {
+        border-top: 2px solid rgb(150, 150, 150);
+        border-right: 2px solid rgb(150, 150, 150);
+        border-bottom: 2px solid rgb(150, 150, 150);
+        border-left: 2px solid rgb(150, 150, 150);
+    }
+    12.5% {
+        border-top: 2px solid rgb(255, 255, 255);
+        border-right: 2px solid rgb(150, 150, 150);
+        border-bottom: 2px solid rgb(150, 150, 150);
+        border-left: 2px solid rgb(150, 150, 150);
+    }
+    25% {
+        border-top: 2px solid rgb(255, 255, 255);
+        border-right: 2px solid rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(150, 150, 150);
+        border-left: 2px solid rgb(150, 150, 150);
+    }
+    37.5% {
+        border-top: 2px solid rgb(255, 255, 255);
+        border-right: 2px solid rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        border-left: 2px solid rgb(150, 150, 150);
+    }
+    50% {
+        border-top: 2px solid rgb(255, 255, 255);
+        border-right: 2px solid rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        border-left: 2px solid rgb(255, 255, 255);
+    }
+    62.5% {
+        border-top: 2px solid rgb(150, 150, 150);
+        border-right: 2px solid rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        border-left: 2px solid rgb(255, 255, 255);
+    }
+    77% {
+        border-top: 2px solid rgb(150, 150, 150);
+        border-right: 2px solid rgb(150, 150, 150);
+        border-bottom: 2px solid rgb(255, 255, 255);
+        border-left: 2px solid rgb(255, 255, 255);
+    }
+    87.5% {
+        border-top: 2px solid rgb(150, 150, 150);
+        border-right: 2px solid rgb(150, 150, 150);
+        border-bottom: 2px solid rgb(150, 150, 150);
+        border-left: 2px solid rgb(255, 255, 255);
+    }
+    100% {
+        border-top: 2px solid rgb(150, 150, 150);
+        border-right: 2px solid rgb(150, 150, 150);
+        border-bottom: 2px solid rgb(150, 150, 150);
+        border-left: 2px solid rgb(150, 150, 150);
+    }
+}
+.header-back-search {
+    color: white;
+    font-size: large;
+    width: 100px;
+    margin-right: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-back-search a {
+    padding: 15px;
+}
+.header-back b {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(26, 224, 0);
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 3px
+}
