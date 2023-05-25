@@ -29,7 +29,7 @@
 
 ## WhatsApp direct link creator
 
-## [😁CLICK TO PROCCESS](https://github.com/prabhasha2006/My-Projects/blob/main/WAdirectURL/index.html)
+## [😁CLICK TO PROCCESS](http://htmlpreview.github.io/?https://github.com/prabhasha2006/My-Projects/blob/main/WAdirectURL/index.html)
 
 > wa.me by K.Prabhasha
 
