@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>QR Code Scanner</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-image: linear-gradient(to left, rgb(134, 241, 255), rgb(255, 255, 255));
+        }
+        .home {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .in {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #btn {
+            padding: 10px 20px;
+            background-color: rgb(39, 150, 255);
+            color: white;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            display: none;
+        }
+        #videoCamera {
+            border-radius: 10px;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="in">
+            <h1>QR SCANNER</h1>
+            <video autoplay="true" id="videoCamera"></video>
+            <P id="link"></P>
+            <a id="btn" href="" target="_blank">Open</a>
+        </div>
+    </div>
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.3.3/adapter.min.js"></script>
+    <script>
+let cameraSource = 0
+let cameraElement = "videoCamera"
+const changeCamera = (selection,cam) => {
+    if(selection === "video"){
+        if(cam === "Defult"){
+            cameraElement = "videoCamera"
+        }else{
+            cameraElement = "error"
+        }
+    }
+    if(selection === "source"){
+        cameraSource = Number(cam)
+    }
+    let KumuthuScanner = new Instascan.Scanner({video: document.getElementById(cameraElement)})
+    Instascan.Camera.getCameras().then((cameras) => {
+        if(cameras.length > 0){
+            KumuthuScanner.start(cameras[cameraSource])
+        }else{
+            alert("Camera Faild !")
+        }
+    }).catch((e) => {
+        console.error(e)
+    })
+}
+let KumuthuScanner = new Instascan.Scanner({video: document.getElementById("videoCamera")})
+Instascan.Camera.getCameras().then((cameras) => {
+    if(cameras.length > 0){
+        KumuthuScanner.start(cameras[cameraSource])
+    }else{
+        alert("Camera Faild !")
+    }
+}).catch((e) => {
+    console.error(e)
+})/*
+document.getElementById("username-data-parse").innerHTML = '067W30T05EC'
+document.getElementById("username-data-parse").click()*/
+KumuthuScanner.addListener('scan',(c) => {
+    console.log(c)
+    link.innerHTML = c
+    btn.href = c
+    btn.style.display = "block"
+    window.open(c, "_blank");
+    //alert(c)
+})
+    </script>
+</body>
+</html>
